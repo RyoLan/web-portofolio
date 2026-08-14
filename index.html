@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio pribadi Ryandra." />
+    <title>Ryandra — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="id-card.css" />
+    <link rel="stylesheet" href="layers.css" />
+    <link rel="stylesheet" href="lanyard-sync.css" />
+    <link rel="stylesheet" href="loader.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="portfolio-sections.css" />
+    <link rel="stylesheet" href="portfolio-images.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <p class="loader-kicker">HELLO, WELCOME</p>
+      <h1><span>Welcome to my</span><span><em>portfolio</em> website.</span></h1>
+      <div class="loader-line"><i></i></div>
+      <small>PLEASE WAIT A MOMENT</small>
+    </div>
+    <div class="noise"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="lanyard-pin" aria-hidden="true"></div>
+    <header class="nav wrap">
+      <a href="#home" class="brand" aria-label="Beranda">R<span>.</span></a>
+      <button class="menu-button" aria-label="Buka menu" aria-expanded="false"><i></i><i></i></button>
+      <nav id="menu">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero wrap">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> DIGITAL CREATIVE</p>
+          <h1><span>Frontend</span><span>Developer</span><span><em>&amp; Creative</em></span></h1>
+          <p class="intro">Mahasiswa informatika yang berfokus pada desain antarmuka, pengembangan web, dan pengalaman digital yang bermakna.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#portfolio">Lihat karya <b>↘</b></a>
+            <a class="button plain" href="#contact">Mari berkolaborasi <b>↗</b></a>
+          </div>
+        </div>
+        <div class="portrait reveal">
+          <div class="ring ring-one"></div><div class="ring ring-two"></div>
+          <p class="drag-hint">CLICK &amp; HOLD TO MOVE</p>
+          <div class="lanyard" aria-hidden="true"><span>ID CARD&nbsp;&nbsp; ID CARD&nbsp;&nbsp; ID CARD</span><i class="lanyard-clip"></i><i class="lanyard-cord"></i></div>
+          <div class="portrait-card id-card" role="button" tabindex="0" aria-label="Tahan dan gerakkan kartu identitas">
+            <div class="card-hole"></div>
+            <div class="portrait-head id-card-top"><span>RYANDRA / ID.025</span><b>●</b></div>
+            <div class="portrait-art"><img src="images/id-card.png" alt="Foto Ryandra" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block" /></div>
+            <div class="portrait-caption"><strong>RYANDRA</strong><br /><small>FRONTEND DEVELOPER</small></div>
+            <div class="id-card-bottom"><span>CREATIVE DEPARTMENT</span><span>2025</span></div>
+          </div>
+          <p class="vertical-word">CREATIVE PORTFOLIO</p>
+        </div>
+        <a href="#about" class="scroll">SCROLL TO EXPLORE <span>↓</span></a>
+      </section>
+
+      <section id="about" class="about wrap section">
+        <p class="section-index">01 / ABOUT ME</p>
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>Merancang hal yang <em>berguna</em>, bukan sekadar terlihat bagus.</h2>
+            <div class="about-copy">
+            <p>Saya memadukan ketelitian seorang developer dan rasa ingin tahu seorang kreator untuk membangun produk digital yang jernih, cepat, dan menyenangkan digunakan.</p>
+            </div>
+            <div class="about-actions"><a href="Ryandra-CV.txt" download class="button plain">Download CV <b>↓</b></a><a href="#portfolio" class="button primary">View Projects <b>↘</b></a></div>
+          </div>
+          <div class="about-photo"><img src="images/about.png" alt="Foto profil Ryandra" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block" /></div>
+        </div>
+        <div class="skills">
+          <article><span>01</span><h3>Web Design</h3><p>Menciptakan tampilan yang berkarakter dan mudah dipahami.</p></article>
+          <article><span>02</span><h3>Development</h3><p>Mewujudkan desain menjadi antarmuka yang responsif.</p></article>
+          <article><span>03</span><h3>Creative Work</h3><p>Menyusun identitas visual untuk cerita yang lebih kuat.</p></article>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio wrap section">
+        <p class="section-index">02 / PORTFOLIO</p>
+        <h2>Portfolio <em>Showcase</em></h2>
+        <p class="portfolio-intro">Explore my journey through projects, certifications, and technical expertise.</p>
+        <div class="portfolio-tabs" role="tablist" aria-label="Kategori portfolio">
+          <button class="portfolio-tab active" type="button" role="tab" id="projects-tab" aria-selected="true" aria-controls="projects">Projects</button>
+          <button class="portfolio-tab" type="button" role="tab" id="certificates-tab" aria-selected="false" aria-controls="certificates">Certificates</button>
+          <button class="portfolio-tab" type="button" role="tab" id="tech-stack-tab" aria-selected="false" aria-controls="tech-stack">Tech Stack</button>
+        </div>
+
+        <div class="portfolio-block portfolio-panel active" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+          <div class="portfolio-block-heading"><p>01 / PROJECTS</p><span>SELECTED WORK</span></div>
+          <div class="projects">
+            <article class="project project-large reveal"><div class="project-image"><img class="project-photo" src="images/project-1.png" alt="Preview Personal Portfolio" style="opacity:1;filter:none" /></div><div class="project-info"><div><p>WEB DESIGN · DEVELOPMENT</p><h3>Personal Portfolio</h3></div><a href="project.html?id=personal-portfolio" aria-label="Lihat proyek Personal Portfolio">↗</a></div></article>
+            <article class="project reveal"><div class="project-image"><img class="project-photo" src="images/project-2.png" alt="Preview Coffee Landing Page" style="opacity:1;filter:none" /></div><div class="project-info"><div><p>BRANDING · WEB</p><h3>Coffee Landing Page</h3></div><a href="project.html?id=coffee-landing" aria-label="Lihat proyek Coffee Landing Page">↗</a></div></article>
+            <article class="project reveal"><div class="project-image"><img class="project-photo" src="images/project-3.png" alt="Preview Typography Study" style="opacity:1;filter:none" /></div><div class="project-info"><div><p>EXPERIMENT · VISUAL</p><h3>Typography Study</h3></div><a href="project.html?id=typography-study" aria-label="Lihat proyek Typography Study">↗</a></div></article>
+          </div>
+        </div>
+
+        <div class="portfolio-block portfolio-panel" id="certificates" role="tabpanel" aria-labelledby="certificates-tab" hidden>
+          <div class="portfolio-block-heading"><p>02 / CERTIFICATES</p><span>CONTINUOUS LEARNING</span></div>
+          <div class="certificate-list">
+            <article class="certificate-card reveal"><img class="certificate-photo" src="images/certificate-1.png" alt="Sertifikat Frontend Web Development" /><div><p>WEB DEVELOPMENT</p><h3>Frontend Web Development</h3></div><span class="certificate-year">2025</span></article>
+            <article class="certificate-card reveal"><img class="certificate-photo" src="images/certificate-2.png" alt="Sertifikat UI/UX Design Fundamentals" /><div><p>UI / UX DESIGN</p><h3>UI/UX Design Fundamentals</h3></div><span class="certificate-year">2025</span></article>
+            <article class="certificate-card reveal"><img class="certificate-photo" src="images/certificate-3.png" alt="Sertifikat Creative Digital Design" /><div><p>DIGITAL CREATIVE</p><h3>Creative Digital Design</h3></div><span class="certificate-year">2024</span></article>
+          </div>
+        </div>
+
+        <div class="portfolio-block portfolio-panel" id="tech-stack" role="tabpanel" aria-labelledby="tech-stack-tab" hidden>
+          <div class="portfolio-block-heading"><p>03 / TECH STACK</p><span>TOOLS I USE</span></div>
+          <div class="tech-stack-grid">
+            <article class="tech-card reveal"><span>01</span><h3>Frontend</h3><p>HTML, CSS, JavaScript</p></article>
+            <article class="tech-card reveal"><span>02</span><h3>Design</h3><p>Figma, Canva, Adobe Photoshop</p></article>
+            <article class="tech-card reveal"><span>03</span><h3>Workflow</h3><p>Git, GitHub, VS Code</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact wrap section">
+        <p class="section-index">03 / LET'S CONNECT</p>
+        <h2>Punya ide?<br /><em>Mari buat nyata.</em></h2>
+        <a class="big-mail" href="mailto:hello@ryandra.dev">hello@ryandra.dev <span>↗</span></a>
+        <div class="contact-bottom"><p>TERBUKA UNTUK KOLABORASI<br />DAN PROYEK MENARIK</p><div><a href="#home">LinkedIn</a><a href="#home">Instagram</a><a href="#home">GitHub</a></div></div>
+      </section>
+    </main>
+    <footer class="wrap"><span>© 2025 RYANDRA</span><span>DESIGNED WITH INTENTION</span></footer>
+    <script src="portfolio-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

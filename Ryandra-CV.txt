@@ -1,0 +1,11 @@
+RYANDRA
+Creative Frontend Developer
+
+PROFILE
+Frontend developer with an interest in visual systems, interaction design, and responsive web experiences.
+
+SKILLS
+HTML, CSS, JavaScript, UI/UX Design, Figma
+
+CONTACT
+hello@ryandra.dev
