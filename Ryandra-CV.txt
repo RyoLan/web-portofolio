@@ -1,4 +1,4 @@
-RYANDRA
+GHIYAS FHINREL MUSYAFFA
 Creative Frontend Developer
 
 PROFILE
@@ -8,4 +8,4 @@ SKILLS
 HTML, CSS, JavaScript, UI/UX Design, Figma
 
 CONTACT
-hello@ryandra.dev
+ghiyasfhinrel@gmail.com

@@ -1,11 +1,17 @@
 /* Geometry is controlled by JavaScript so the connector always ends at the card hole. */
-.lanyard{--lanyard-height:315px;height:var(--lanyard-height);transition:transform .08s linear}
-.lanyard.tracking{transition:none}
+.lanyard{--lanyard-height:315px;--lanyard-tension:0;--lanyard-scale:1;--lanyard-slack:0deg;--lanyard-fold:0;--lanyard-fold-offset:0px;height:var(--lanyard-height)}
 .lanyard:before{height:calc(var(--lanyard-height) - 32px)}
 .lanyard:after{top:calc(var(--lanyard-height) - 36px)}
-.lanyard span{height:calc(var(--lanyard-height) - 70px)}
+.lanyard-ribbon{height:calc(var(--lanyard-height) - 32px)}
 .lanyard-clip{top:calc(var(--lanyard-height) - 42px)}
 .lanyard-cord{top:calc(var(--lanyard-height) - 24px)}
 .id-card{animation:none!important}
 .card-hole:after{content:'';position:absolute;left:13px;top:-17px;width:4px;height:20px;border-radius:3px;background:linear-gradient(90deg,#111,#777,#111);box-shadow:0 1px 3px #000}
-.lanyard-pin{position:fixed;z-index:10;top:0;left:0;width:8px;height:0;pointer-events:none;transform-origin:50% 0;background:linear-gradient(90deg,#111,#888 48%,#202020 55%,#090909);border-radius:5px;box-shadow:0 1px 4px #000}
+.lanyard-pin{position:fixed;z-index:10;top:0;left:0;width:8px;height:0;pointer-events:none;opacity:0;transform-origin:50% 0;background:linear-gradient(90deg,#111,#888 48%,#202020 55%,#090909);border-radius:5px;box-shadow:0 1px 4px #000}
+.lanyard:before,.lanyard:after,.lanyard-ribbon,.lanyard-clip,.lanyard-cord{opacity:0}
+.lanyard-canvas{position:absolute;z-index:1;top:-220px;left:-150px;width:calc(100% + 300px);height:650px;overflow:visible;pointer-events:auto;touch-action:none;cursor:grab}
+.lanyard-canvas:active{cursor:grabbing}
+.lanyard-ribbon{transform:skewX(var(--lanyard-slack)) scaleX(var(--lanyard-scale));transform-origin:top center;transition:filter .16s ease}
+.lanyard-ribbon:before{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;opacity:var(--lanyard-fold);background:repeating-linear-gradient(155deg,transparent 0 13px,rgba(20,0,0,.52) 14px 16px,rgba(255,255,255,.28) 17px 18px,transparent 19px 29px);background-position:0 var(--lanyard-fold-offset);mix-blend-mode:multiply}
+.lanyard.tracking .lanyard-ribbon{filter:brightness(1.14) saturate(1.12)}
+.lanyard.tracking .lanyard-clip,.lanyard.tracking .lanyard-cord{filter:brightness(1.18)}

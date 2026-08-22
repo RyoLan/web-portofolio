@@ -1,0 +1,5 @@
+.reveal,.scroll-animated{opacity:0;transform:translate3d(0,28px,0) scale(.985);filter:blur(2px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.2,1),filter .65s ease;transition-delay:var(--scroll-delay,0ms);will-change:opacity,transform,filter}
+.reveal.visible,.scroll-animated.is-visible{opacity:1;transform:none;filter:none}
+.scroll-animated article,.scroll-animated .button,.scroll-animated a{will-change:transform}
+body:not(.page-ready) #home .scroll-animated,body:not(.page-ready) #home .reveal{transition-delay:calc(2.25s + var(--scroll-delay,0ms))}
+@media(prefers-reduced-motion:reduce){.reveal,.scroll-animated{opacity:1;transform:none;filter:none;transition:none}.scroll-animated article,.scroll-animated .button,.scroll-animated a{will-change:auto}}
